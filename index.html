@@ -19,10 +19,76 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header></header>
+  <body class="bg-primary-main-background">
+    <!-- <header class="padding mt-6 font-Raleway relative z-10 text-neutral-white"> -->
+    <header class="padding mt-6 font-Raleway relative z-10 text-slate-400">
+      <nav class="flex items-center">
+        <!-- logo area -->
+        <div class="mr-auto w-[25%] lg:w-[10%]">
+          <a href="#">
+            <img src="logo.svg" alt="Fylo logo" />
+          </a>
+        </div>
+        <!-- logo area end -->
+        <!-- menu link area -->
+        <ul class="hidden lg:flex lg:gap-10">
+          <li>
+            <a href="#" class="text-sm hover:underline hover:text-neutral-white"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm hover:underline hover:text-neutral-white"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm hover:underline hover:text-neutral-white"
+              >Sign In</a
+            >
+          </li>
+          <li class="text-sm">DarkMode</li>
+        </ul>
+        <!-- menu link area  end-->
+        <!-- <span><ion-icon name="menu-outline"></ion-icon></span> -->
+        <span class="inline-block ml-10 text-sm lg:hidden">Menu icon</span>
+      </nav>
+    </header>
+    <!-- Mobile navbar area -->
+    <ul
+      class="absolute z-20 top-0 left-0 hidden flex-col justify-center gap-11 items-center text-slate-400 w-full h-full"
+    >
+      <li>
+        <a href="#" class="text-2xl hover:underline hover:text-neutral-white"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-2xl hover:underline hover:text-neutral-white"
+          >Team</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-2xl hover:underline hover:text-neutral-white"
+          >Sign In</a
+        >
+      </li>
+      <li class="text-2xl hover:underline hover:text-neutral-white">
+        DarkMode
+      </li>
+    </ul>
+    <!-- Mobile navbar area end-->
     <main></main>
     <footer></footer>
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
